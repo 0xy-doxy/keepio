@@ -9,7 +9,7 @@ export const signUpSchema = z.object({
         .string()
         .min(1, {message: "Password is required"})
         .min(8, {message: "Password should be more than 8 characters"}),
-        passwordConfirmation: z
+    passwordConfirmation: z
         .string()
         .min(1, {message: "Please confirm your password"})
 })
